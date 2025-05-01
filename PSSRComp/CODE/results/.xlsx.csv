@@ -1,0 +1,5 @@
+Model,Batch Size,Epochs,Input Data Dimensions,Training Data Size,Validation Data Size,Loss Function,Optimizer
+LSTM RNN,32,50,"(num_samples, sequence_length, features)",80% of dataset,20% of dataset,Categorical Crossentropy,Adam
+SST3 Text Classification,64,30,"(num_samples, text_length, embedding_dim)",70% of dataset,30% of dataset,Sparse Categorical Crossentropy,SGD/Adam
+Protein Structure Prediction (Seq Model),128,100,"(num_samples, amino_acid_seq_length)",80% of protein dataset,10% of dataset,Mean Squared Error,Adam
+GNN Protein Prediction,64,40,"(num_samples, graph_nodes, features)",80% of graph dataset,10% of dataset,Cross Entropy Loss,Adam
